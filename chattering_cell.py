@@ -46,17 +46,30 @@ import matplotlib.pyplot as plt
 
 class izhCell():
     def __init__(self,stimVal):
+        '''
+        
+
+        Parameters
+        ----------
+        stimVal : TYPE
+            DESCRIPTION.
+
+        Returns
+        -------
+        None.
+
+        '''
         # Define Neuron Parameters
-        self.celltype='Generic Izhikevich' # Regular spiking
-        self.C=100
+        self.celltype='Chattering Izhikevich' # Chattering
+        self.C=50
         self.vr=-60
         self.vt=-40
-        self.k=0.7
+        self.k=1.5
         self.a=0.03
-        self.b=-2
-        self.c=-50
-        self.d=100
-        self.vpeak=35
+        self.b=1
+        self.c=-40
+        self.d=150
+        self.vpeak=25
         self.stimVal = stimVal
     
         
